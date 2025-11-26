@@ -12,6 +12,7 @@ export default function App() {
 
   return (
     <>
+    <h1>How are you feeling today!</h1>
       <button onClick={() => handleMoodSelect("Happy")}>☺️<br />Happy</button>
       <button onClick={() => handleMoodSelect("Sad")}>😔<br />Sad</button>
       <button onClick={() => handleMoodSelect("Cry")}>😢<br />Cry</button>
@@ -20,20 +21,18 @@ export default function App() {
 
       <br /><br />
 
-      {/* Buttons to toggle what to show */}
       <button onClick={() => setView("today")}>Today's Mood</button>
       <button onClick={() => setView("history")}>Mood History</button>
 
       <br /><br />
 
-      {/* Conditional UI */}
       {view === "today" && (
         <p>Today’s Mood: {currentMood || "No mood selected yet."}</p>
       )}
 
       {view === "history" && (
         <>
-          <h3>Past Moods:</h3>
+          <h3>Past Mood:</h3>
           {moodHistory.length === 0 ? (
             <p>No mood history yet.</p>
           ) : (
