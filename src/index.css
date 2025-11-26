@@ -1,0 +1,21 @@
+button{
+  padding: 20px;
+  margin:15px;
+  background-color:violet;
+  border: solid;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: larger;
+}
+.currentMood{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+}
+.historyBtn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+}
